@@ -1,10 +1,12 @@
-import dotEnv from ''
+import { config } from 'dotenv'
+config();
+
 import { CreateTableCommandInput } from "@aws-sdk/client-dynamodb";
 
 export const CONFIG = {
     credentials: {
-        accessKeyId: 'AKIAUK7AAXGOCSDEL2VT',
-        secretAccessKey: '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',
+        accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
     },
     region: 'ap-northeast-1',
 }

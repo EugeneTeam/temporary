@@ -1,3 +1,6 @@
+import { config as dotENvConfig } from 'dotenv';
+dotENvConfig();
+
 import {
     ListObjectsCommand,
     PutObjectCommand,
@@ -5,13 +8,14 @@ import {
     S3Client,
     S3ClientConfig
 } from '@aws-sdk/client-s3';
+
 import * as fs from "fs";
 
 
 const config: S3ClientConfig = {
     credentials: {
-        accessKeyId: 'AKIAUK7AAXGOCSDEL2VT',
-        secretAccessKey: '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',
+        accessKeyId: process.env.AWS_ACCESS_KEY_ID || '',
+        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY || '',
     },
     region: 'ap-northeast-1',
 }

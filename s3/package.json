@@ -13,7 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "@aws-sdk/client-s3": "^3.223.0",
-    "@aws-sdk/lib-storage": "^3.223.0"
+    "@aws-sdk/lib-storage": "^3.223.0",
+    "dotenv": "^16.0.3"
   },
   "devDependencies": {
     "@aws-sdk/types": "^3.222.0",
