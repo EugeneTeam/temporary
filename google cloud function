@@ -1,0 +1,5 @@
+google
+https://us-central1-orbital-builder-368711.cloudfunctions.net/function-1?operator=*&a=5&b=5
+
+aws
+https://upobiyardzf3hxlcaxn3tcc3im0lyllg.lambda-url.ap-northeast-1.on.aws/?a=10&b=3&operator=*
